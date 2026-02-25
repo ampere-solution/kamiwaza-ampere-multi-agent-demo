@@ -44,7 +44,8 @@ Download the following models from [Hugging Face](https://huggingface.co) and pl
 ---
 ## 2. Git clone the Demo
 ```bash
-bash git clone 
+bash git clone https://github.com/ampere-solution/kamiwaza-ampere-multi-agent-demo.git
+```
 ## 3. Run and Deploy the Demo
 
 ### Step 1: Build the Application
