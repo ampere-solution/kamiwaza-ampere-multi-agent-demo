@@ -1,14 +1,14 @@
-# HOW TO BUILD and RUN KAMIWAZA
+# HOW TO RUN KAMIWAZA
 
-Follow these steps to configure, build, and launch the Kamiwaza Ampere Multi-Agent Demo.
+Follow these steps to configure and launch the Kamiwaza Ampere Multi-Agent Demo.
 
 ## 1. Prerequisites
 
-Before building the demo, ensure you have the following three items configured:
+Before deploying the demo, ensure you have the following three items configured:
 
 ### A. Brave API Key
 Get a free key from the [Brave Search API](https://brave.com/search/api/).
-*   **Action**: Replace the value in the `BRAVE_API_KEY` section of your `Dockerfile` (or `docker-compose.yaml`). 
+*   **Action**: Replace the value in the `BRAVE_API_KEY` section of your `docker-compose.yaml`. 
 *   **Purpose**: This allows LLM agents to perform web searches for research workflows.
 
 ### B. Hugging Face Token
@@ -38,16 +38,18 @@ Download the following models from [Hugging Face](https://huggingface.co) and pl
 * `Qwen3-4B-Q8R16.gguf` (4.0 GB)
 * `Qwen3-8B-Q8R16.gguf` (8.2 GB)
 
-> **Note**: Update the volume mapping in `run-app.sh` (or `docker-compose.yaml`) to match your local path:  
-> `-v /your/local/models/path:/data/models`
+> **Note**: Update the volume mapping in `docker-compose.yaml` to match your local path:  
+> `- /mnt/workspace/data/models:/data/models`
 
 ---
 
-## 2. Build and Run
+## 2. Run and Deploy the Demo
 
 ### Step 1: Build the Application
 ```bash
-bash build-app.sh
+bash run-app.sh
+
+
 
 
 
