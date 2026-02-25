@@ -42,8 +42,10 @@ Download the following models from [Hugging Face](https://huggingface.co) and pl
 > `- /mnt/workspace/data/models:/data/models`
 
 ---
-
-## 2. Run and Deploy the Demo
+## 2. Git clone the Demo
+```bash
+bash git clone 
+## 3. Run and Deploy the Demo
 
 ### Step 1: Build the Application
 ```bash
