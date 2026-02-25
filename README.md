@@ -79,7 +79,8 @@ e606661b7da0   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3
 > **Note**: Make sure that you will see all the llm-servers running!
 
 The demo is ready to at http://<ip address>:16969
-![Alt Text](/Users/tinguyen/Desktop/kamiwaza.png)
+<img width="1530" height="1158" alt="kamiwaza" src="https://github.com/user-attachments/assets/97535a7c-9c3c-49a5-a0a3-8ba0e1c32f4e" />
+
 
 ### Step 3: Stop the Application
 ```bash
