@@ -14,7 +14,7 @@ services:
       - "8004:8004" 
       - "8005:8005"
     environment:
-      - BRAVE_API_KEY=BSA59VeOw06quhrS1sA0VbnjxrTLqDF
+      - BRAVE_API_KEY=<your key>
       - API_KEY=default-key
     volumes:
       - /mnt/workspace/data/models:/data/models
