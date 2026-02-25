@@ -81,6 +81,9 @@ e606661b7da0   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3
 The demo is ready to at http://<ip address>:16969
 <img width="1530" height="1158" alt="kamiwaza" src="https://github.com/user-attachments/assets/97535a7c-9c3c-49a5-a0a3-8ba0e1c32f4e" />
 
+Check the logs files at http://<ip address>:8004
+<img width="1979" height="584" alt="Screenshot 2026-02-25 at 3 31 37 PM" src="https://github.com/user-attachments/assets/25fa3418-6433-4ef1-8fdd-7bd1df9e5a4a" />
+
 
 ### Step 3: Stop the Application
 ```bash
