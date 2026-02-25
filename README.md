@@ -49,6 +49,10 @@ Download the following models from [Hugging Face](https://huggingface.co) and pl
 ```bash
 bash run-app.sh
 
+### Step 2: Stop the Application
+```bash
+bash stop-app.sh
+
 
 
 
