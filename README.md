@@ -78,6 +78,9 @@ e606661b7da0   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3
 ```
 > **Note**: Make sure that you will see all the llm-servers running!
 
+The demo is ready to at http://<ip address>:16969
+
+
 ### Step 3: Stop the Application
 ```bash
 bash stop-app.sh
