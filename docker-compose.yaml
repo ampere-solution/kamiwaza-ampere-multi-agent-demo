@@ -1,0 +1,26 @@
+services:
+  kamiwaza-demo:
+    image: tinguyen2024/kamiwaza-github-kamiwaza-demo
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
+    container_name: kamiwaza-ampere-multi-agent-demo
+    privileged: true  # Required for Docker-in-Docker
+    ports:
+      - "16969:16969"
+      - "8001:8001" 
+      - "8002:8002"
+      - "8003:8003" 
+      - "8004:8004" 
+      - "8005:8005"
+    environment:
+      - BRAVE_API_KEY=BSA59VeOw06quhrS1sA0VbnjxrTLqDF
+      - API_KEY=default-key
+    volumes:
+      - /mnt/workspace/data/models:/data/models
+      - kamiwaza-docker-data:/var/lib/docker
+    restart: unless-stopped
+
+volumes:
+  kamiwaza-docker-data:
+

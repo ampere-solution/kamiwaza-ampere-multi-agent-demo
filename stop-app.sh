@@ -13,4 +13,4 @@
 #--name kamiwaza-ampere-multi-agent-demo tinguyen2024/kamiwaza-ampere-multi-agent-and-datasources-demo
 
 
-docker compose up -d
+docker compose down
