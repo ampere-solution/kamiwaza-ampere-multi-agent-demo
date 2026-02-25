@@ -38,14 +38,14 @@ Download the following models from [Hugging Face](https://huggingface.co) and pl
 * `Qwen3-4B-Q8R16.gguf` (4.0 GB)
 * `Qwen3-8B-Q8R16.gguf` (8.2 GB)
 
-> **Note**: Update the volume mapping in `docker-compose.yaml` to match your local path:  
-> `- /mnt/workspace/data/models:/data/models`
-
 ---
 ## 2. Git clone the Demo
 ```bash
 git clone https://github.com/ampere-solution/kamiwaza-ampere-multi-agent-demo.git
 ```
+> **Note**: Update the volume mapping in `docker-compose.yaml` to match your local path:  
+> `- /mnt/workspace/data/models:/data/models`
+
 ## 3. Run and Deploy the Demo
 
 ### Step 1: Build the Application
