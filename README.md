@@ -46,37 +46,12 @@ git clone https://github.com/ampere-solution/kamiwaza-ampere-multi-agent-demo.gi
 > **Note**: Update the volume mapping in `docker-compose.yaml` to match your local path:  
 > `- /mnt/workspace/data/models:/data/models`
 
-## 3. Run and Deploy the Demo
+## 3. Run the Demo
 
 ### Step 1: Run the Application
 ```bash
 bash run-app.sh
 ```
-
-### Step 2: Setup the Application
-```bash
-docker exec -it kamiwaza-ampere-multi-agent-demo bash
-```
-
-```bash
-# cd outcome-a872-Ampere_MultiAgentDemo/
-# bash manage_llm_servers.sh start
-# docker ps
-CONTAINER ID   IMAGE                                COMMAND                  CREATED         STATUS                           PORTS                                         NAMES
-597191c80489   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8022->8022/tcp, [::]:8022->8022/tcp   llama22
-29690ac68196   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8017->8017/tcp, [::]:8017->8017/tcp   llama17
-75bfc2bfa1ff   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8021->8021/tcp, [::]:8021->8021/tcp   llama21
-2cdb680601f4   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8019->8019/tcp, [::]:8019->8019/tcp   llama19
-6b89fb20d4ea   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8016->8016/tcp, [::]:8016->8016/tcp   llama16
-666348a80c56   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8012->8012/tcp, [::]:8012->8012/tcp   llama12
-796cab524b4c   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8014->8014/tcp, [::]:8014->8014/tcp   llama14
-49f6ac6e0280   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8013->8013/tcp, [::]:8013->8013/tcp   llama13
-cb3f42a5e974   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8020->8020/tcp, [::]:8020->8020/tcp   llama20
-a39a083ca336   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8011->8011/tcp, [::]:8011->8011/tcp   llama11
-48819e22183e   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8018->8018/tcp, [::]:8018->8018/tcp   llama18
-e606661b7da0   amperecomputingai/llama.cpp:latest   "/llm/llama-server -…"   3 seconds ago   Up 1 second (health: starting)   0.0.0.0:8015->8015/tcp, [::]:8015->8015/tcp   llama15
-```
-> **Note**: Make sure that you will see all the llm-servers running!
 
 The demo is ready to at http://<ip address>:16969
 <img width="1530" height="1158" alt="kamiwaza" src="https://github.com/user-attachments/assets/97535a7c-9c3c-49a5-a0a3-8ba0e1c32f4e" />
@@ -85,7 +60,7 @@ Check the logs files at http://<ip address>:8004
 <img width="1979" height="584" alt="Screenshot 2026-02-25 at 3 31 37 PM" src="https://github.com/user-attachments/assets/25fa3418-6433-4ef1-8fdd-7bd1df9e5a4a" />
 
 
-### Step 3: Stop the Application
+### Step 2: Stop the Application
 ```bash
 bash stop-app.sh
 ```
