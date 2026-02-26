@@ -43,7 +43,7 @@ Download the following models from [Hugging Face](https://huggingface.co) and pl
 ```bash
 git clone https://github.com/ampere-solution/kamiwaza-ampere-multi-agent-demo.git
 ```
-> **Note**: Update the volume mapping in `docker-compose.yaml` to match your local path:  
+> **Note**: Update the volume mapping for the models directory in `docker-compose.yaml` to match your local path:  
 > `- /mnt/workspace/data/models:/data/models`
 
 ## 3. Run the Demo
